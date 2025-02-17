@@ -1,0 +1,1 @@
+# Pokročilé programovací techniky 
