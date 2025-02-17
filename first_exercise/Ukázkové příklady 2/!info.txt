@@ -1,0 +1,20 @@
+
+Moduly projektu, ukázka modulárního programování v jazyce C++, resp. v jazyce C; strukturovaný princip
+-------------------------------------------------------------------------------------------------------
+(4_a0) Trojuhelnik - struct.zip : základní využití datového typu struktura
+
+(4_a) Trojuhelnik - struct.zip : rozšíøené využití datového typu struktura, funkce pro práci s trojúhleníkem v jednom modulu
+
+(4_b) Trojuhelnik - struct.zip : rozšíøené využití datového typu struktura, funkce pro práci s trojúhelníkem rozdìleny do dvou modulù podle významu
+
+(5) Trojuhelnik - struct usage.zip : porovnání zpùsobù øešení problému
+
+
+Zpùsoby ošetøení chybového stavu, resp. pøedání informace o chybì
+-------------------------------------------------------------------
+Example-Error.zip : zpùsoby ošetøení chybového stavu (pøedání informace o chybì) v jazyce C++, varianta A a varianta B
+
+Example-Error_Csharp.zip : zpùsob ostøení chybového stavu v jazyce C#, varinta C (využití mechanizmu výjimek (exceptions)), pouze základní koncept
+
+
+
