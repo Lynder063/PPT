@@ -1,35 +1,37 @@
-Modulární programování, model programu - vrstvy aplikace
-------------------------------------------------------------
 
-Organizační záležitosti cvičení
-- organizace cvičení, požadavky pro získání zápočtu, rozdělení do týmů, e-learning
-- používaná vývojová prostředí a programovací jazyky
-- vyzkoušení instalace aplikací
--------------
+Modulární programování, objektové modelování
+----------------------------------------------
 
-1. Modulární programování, model programu - vrstvy aplikace
-význam modulárního programování, build a sestavení projektu, objektový soubor *.obj, linkování, *.exe
-model programu - vrstvy aplikace a jejich význam, nezávislost metody
+1. Nastudujte si ukázky příkladů.
+Visual Studio, C++
 
-Význam vrstev aplikace, uspořádání v projektu.
-	Visual Studio, IntelliJ, ....; (C#, C++, Java)
+Rozdělení implementace problému výpočtu obdélníka v projektu Application_12, Application_14 do modulů je nedostatečné. Modul Fce_Obdelnik dopočítává správně údaje obdélníka, ale navíc obsahuje metody závislé na uživatelském rozhraní. 
+Modul Fce_Obdelnik tak není plně využitelný v jiném typu aplikace. 
 
-Pracovní prostory, knihovny (dll) a jejich význam.
+a)
+Vytvořte modul např. Obdelnik_IO (nebo IO_Obdelnik), který bude realizovat standardní vstup a výstup konzolové aplikace. 
+Nový modul zaintegrujte do projektu tak, aby byl projekt kompilovatelný a spustitelný. Nakreslete schéma, které bude vizualizovat závislost
+mezi moduly.
 
-Co znamená "nezávislá metoda"?
+Výstupem: dokladovat rozhraní modulů a jejich provázanost (vizualizace závislostí).
 
-Parametry metod a jejich realizace.
-	C, C++, C#, Java
+b)
+Každý modul má v překladu objektový soubor s příponou .obj. Podívejte se na datumy vytvoření těchto souborů a něco změňte v libovolném modulu. 
+Sledujte datumu objektových souborů po překladu a odvoďte logický závěr (proč)?
 
-Předávání informace o chybě.
-	Jaké jsou způsoby realizace předání informace o chybě?
+Výstup: upravené zdrojové kódy, diskuze nad výsledky pozorování modulárního překladu.
 
-Využití mechanismu výjimek - exceptions.
+-----
 
-Dokumentační komentáře - úvod. 
+2. 
 
-Ladění programu. 
-	Možnosti ladění programu, lokalizace chyby.
+
+
+V prostředí Visual Studio, v jazyce C# vytvořte vlastní knihovnu (třídu) matematických funkcí pojmenovanou Math. Bude obsahovat metodu pro výpočet faktoriálu čísla, implementujte a doplňte dokumentační komentáře. 
+Použijte v programu vlastní knihovnu a již dostupnou knihovnu Math. 
+
+Knihovnu vyexportujte do knihovny MyMathLibrary. 
+
 
 
 
