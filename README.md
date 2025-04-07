@@ -20,7 +20,7 @@ prezentace projektu: odprezentovat téma a dílčí části řešení projektu. 
 
 ## Projekt
 
-Odevzdání dílčích částí řešení projektu v zadaném termínu. Odevzdává se týmově, pouze jeden za celý tým. Odevzdává se soubor ve formátu zip a pojmenovaný dle identifikátoru týmu a čísla odevzdání:  T01-#1.zip Náležitosti obsažené v kompriomovaném souboru jsou vždy specifikovány pro dílčí odevzdání.
+Odevzdání dílčích částí řešení projektu v zadaném termínu. Odevzdává se týmově, pouze jeden za celý tým. Odevzdává se soubor ve formátu zip a pojmenovaný dle identifikátoru týmu a čísla odevzdání: `T01-#1.zip`. Náležitosti obsažené v kompriomovaném souboru jsou vždy specifikovány pro dílčí odevzdání.
 
 *Pozn: Při e-mailové komunikaci s vyučujícím uvádějte v předmětu zprávy zkratku předmětu a rozvrhovou skupinu cvičení, tedy příklad 'PPT : St0102 - předmět e-mailu'*
 
