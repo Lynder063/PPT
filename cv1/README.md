@@ -11,6 +11,8 @@ Rozdělení implementace problému výpočtu obdélníka v projektu `Application
 
 **Výstupem: dokladovat rozhraní modulů a jejich provázanost (vizualizace závislostí).**
 
+![Vizualizace zavislosti](vizualizace.png) 
+
 **b)**
 - Každý modul má v překladu objektový soubor s příponou .obj. Podívejte se na datumy vytvoření těchto souborů a něco změňte v libovolném modulu. 
 - Sledujte datumu objektových souborů po překladu a odvoďte logický závěr (proč)?
