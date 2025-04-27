@@ -1,0 +1,144 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Třída Faktura -->
+  <rect x="320" y="10" width="200" height="150" fill="white" stroke="black" />
+  <line x1="320" y1="40" x2="520" y2="40" stroke="black" />
+  <line x1="320" y1="100" x2="520" y2="100" stroke="black" />
+  <text x="420" y="30" text-anchor="middle" font-weight="bold">Faktura</text>
+  <text x="330" y="60">- cisloDokladu: String</text>
+  <text x="330" y="75">- datumVystaveni: LocalDate</text>
+  <text x="330" y="90">- datumSplatnosti: LocalDate</text>
+  <text x="330" y="120">+ getPrijemce(): Prijemce</text>
+  <text x="330" y="135">+ getCastkyDokladu(): CastkyDokladu</text>
+  <text x="330" y="150">+ toString(): String</text>
+  
+  <!-- Třída Prijemce -->
+  <rect x="50" y="200" width="200" height="180" fill="white" stroke="black" />
+  <line x1="50" y1="230" x2="250" y2="230" stroke="black" />
+  <line x1="50" y1="320" x2="250" y2="320" stroke="black" />
+  <text x="150" y="220" text-anchor="middle" font-weight="bold">Prijemce</text>
+  <text x="60" y="250">- jmeno: String</text>
+  <text x="60" y="265">- prijmeni: String</text>
+  <text x="60" y="280">- ulice: String</text>
+  <text x="60" y="295">- mesto: String</text>
+  <text x="60" y="310">- psc: String</text>
+  <text x="60" y="325">- telefon: String</text>
+  <text x="60" y="340">- email: String</text>
+  <text x="60" y="355">+ toString(): String</text>
+  <text x="60" y="370">+ getters()</text>
+  
+  <!-- Třída CastkyDokladu -->
+  <rect x="550" y="200" width="200" height="140" fill="white" stroke="black" />
+  <line x1="550" y1="230" x2="750" y2="230" stroke="black" />
+  <line x1="550" y1="300" x2="750" y2="300" stroke="black" />
+  <text x="650" y="220" text-anchor="middle" font-weight="bold">CastkyDokladu</text>
+  <text x="560" y="250">- cenaBezDph: double</text>
+  <text x="560" y="265">- cenaSdph: double</text>
+  <text x="560" y="280">- sazba: Sazba</text>
+  <text x="560" y="315">+ getDph(): double</text>
+  <text x="560" y="330">+ toString(): String</text>
+  <text x="560" y="345">+ getters()</text>
+  
+  <!-- Třída Sazba -->
+  <rect x="575" y="400" width="150" height="100" fill="white" stroke="black" />
+  <line x1="575" y1="430" x2="725" y2="430" stroke="black" />
+  <line x1="575" y1="470" x2="725" y2="470" stroke="black" />
+  <text x="650" y="420" text-anchor="middle" font-weight="bold">Sazba</text>
+  <text x="585" y="450">- zkratka: String</text>
+  <text x="585" y="465">- hodnota: double</text>
+  <text x="585" y="485">+ toString(): String</text>
+  <text x="585" y="500">+ getters()</text>
+  
+  <!-- Abstraktní třída ZauctujFakturu -->
+  <rect x="120" y="450" width="250" height="150" fill="white" stroke="black" />
+  <line x1="120" y1="480" x2="370" y2="480" stroke="black" />
+  <line x1="120" y1="550" x2="370" y2="550" stroke="black" />
+  <text x="245" y="470" text-anchor="middle" font-weight="bold" font-style="italic">ZauctujFakturu</text>
+  <text x="130" y="500" font-style="italic"># cisloDokladu, datumVystaveni, ...</text>
+  <text x="130" y="515" font-style="italic"># castka: double</text>
+  <text x="130" y="530" font-style="italic"># zkratkaSazby, hodnotaSazby</text>
+  <text x="130" y="570">+ vytvorFakturu(): Faktura</text>
+  <text x="130" y="585" font-style="italic"># vypoctiCastky(Sazba): CastkyDokladu</text>
+  
+  <!-- Enum TypVypoctuDane.java -->
+  <rect x="50" y="650" width="150" height="80" fill="white" stroke="black" />
+  <line x1="50" y1="680" x2="200" y2="680" stroke="black" />
+  <text x="125" y="670" text-anchor="middle" font-weight="bold">«enumeration»</text>
+  <text x="125" y="695" text-anchor="middle" font-weight="bold">TypVypoctuDane</text>
+  <text x="75" y="715">ZDOLA, SHORA, FIXNI</text>
+  
+  <!-- Třída FakturaBuilder -->
+  <rect x="550" y="550" width="250" height="150" fill="white" stroke="black" />
+  <line x1="550" y1="580" x2="800" y2="580" stroke="black" />
+  <line x1="550" y1="650" x2="800" y2="650" stroke="black" />
+  <text x="675" y="570" text-anchor="middle" font-weight="bold">FakturaBuilder</text>
+  <text x="560" y="600">- cisloDokladu, datumVystaveni, ...</text>
+  <text x="560" y="615">- typVypoctuDane: TypVypoctuDane</text>
+  <text x="560" y="630">- fixniDph: double</text>
+  <text x="560" y="670">+ cisloDokladu(String): FakturaBuilder</text>
+  <text x="560" y="685">+ typVypoctuDane(TypVypoctuDane): FakturaBuilder</text>
+  <text x="560" y="700">+ build(): Faktura</text>
+  
+  <!-- Třída ZauctujFakturuZdola -->
+  <rect x="20" y="630" width="100" height="40" fill="white" stroke="black" />
+  <text x="70" y="655" text-anchor="middle" font-size="8">ZauctujFakturuZdola</text>
+  
+  <!-- Třída ZauctujFakturuShora -->
+  <rect x="130" y="630" width="100" height="40" fill="white" stroke="black" />
+  <text x="180" y="655" text-anchor="middle" font-size="8">ZauctujFakturuShora</text>
+  
+  <!-- Třída ZauctujFakturuFixni -->
+  <rect x="240" y="630" width="100" height="40" fill="white" stroke="black" />
+  <text x="290" y="655" text-anchor="middle" font-size="8">ZauctujFakturuFixni</text>
+
+  <!-- Kompozice Faktura -> Prijemce -->
+  <line x1="320" y1="100" x2="150" y2="200" stroke="black" />
+  <polygon points="320,100 310,95 310,105" fill="black" />
+  <circle cx="150" cy="200" r="6" fill="black" />
+  <text x="200" y="150" text-anchor="middle">1</text>
+  <text x="150" y="190" text-anchor="middle">1</text>
+  
+  <!-- Kompozice Faktura -> CastkyDokladu -->
+  <line x1="520" y1="100" x2="650" y2="200" stroke="black" />
+  <polygon points="520,100 530,95 530,105" fill="black" />
+  <circle cx="650" cy="200" r="6" fill="black" />
+  <text x="570" y="150" text-anchor="middle">1</text>
+  <text x="650" y="190" text-anchor="middle">1</text>
+  
+  <!-- Kompozice CastkyDokladu -> Sazba -->
+  <line x1="650" y1="340" x2="650" y2="400" stroke="black" />
+  <polygon points="650,340 645,350 655,350" fill="black" />
+  <circle cx="650" cy="400" r="6" fill="black" />
+  <text x="635" y="370" text-anchor="middle">1</text>
+  <text x="635" y="395" text-anchor="middle">1</text>
+  
+  <!-- Asociace FakturaBuilder -> Faktura -->
+  <line x1="675" y1="550" x2="420" y2="160" stroke="black" stroke-dasharray="5,5" />
+  <polygon points="420,160 415,170 425,170" fill="black" />
+  <text x="550" y="350" text-anchor="middle">«creates»</text>
+  
+  <!-- Asociace FakturaBuilder -> ZauctujFakturu -->
+  <line x1="550" y1="625" x2="370" y2="525" stroke="black" stroke-dasharray="5,5" />
+  <polygon points="370,525 365,535 375,535" fill="black" />
+  <text x="460" y="575" text-anchor="middle">«uses»</text>
+  
+  <!-- Asociace ZauctujFakturu -> Faktura -->
+  <line x1="245" y1="450" x2="420" y2="160" stroke="black" stroke-dasharray="5,5" />
+  <polygon points="420,160 415,170 425,170" fill="black" />
+  <text x="330" y="300" text-anchor="middle">«creates»</text>
+  
+  <!-- Dědičnost ZauctujFakturuZdola -> ZauctujFakturu -->
+  <line x1="70" y1="630" x2="150" y2="600" stroke="black" />
+  <polygon points="150,600 140,590 160,590" fill="white" stroke="black" />
+  
+  <!-- Dědičnost ZauctujFakturuShora -> ZauctujFakturu -->
+  <line x1="180" y1="630" x2="180" y2="600" stroke="black" />
+  <polygon points="180,600 170,590 190,590" fill="white" stroke="black" />
+  
+  <!-- Dědičnost ZauctujFakturuFixni -> ZauctujFakturu -->
+  <line x1="290" y1="630" x2="210" y2="600" stroke="black" />
+  <polygon points="210,600 200,590 220,590" fill="white" stroke="black" />
+  
+  <!-- Asociace FakturaBuilder -> TypVypoctuDane.java -->
+  <line x1="550" y1="690" x2="200" y2="690" stroke="black" />
+  <polygon points="550,690 540,685 540,695" fill="white" stroke="black" />
+</svg>
