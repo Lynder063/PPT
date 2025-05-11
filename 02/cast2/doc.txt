@@ -1,0 +1,24 @@
+Shrnutí odhalených chyb v implementacích:
+1. V původní implementaci VyhodnoceniProspechu:
+
+Metody prospech a prumer byly prázdné, neobsahovaly žádnou implementaci
+V metodě prumer chyběla kontrola na null nebo prázdné pole
+Chyběly dokumentační komentáře
+
+2. V původní implementaci Zpracovani:
+
+Metoda interval vracela vždy false místo správného vyhodnocení intervalu
+Metoda vzorkySestupně vracela vždy null místo generování pole hodnot
+Chyběly kontroly vstupních parametrů
+Chyběly dokumentační komentáře
+
+3. V původní implementaci ZpracovaniMoje:
+
+Obě metody comp vracely vždy -1 místo správného porovnání hodnot
+Chyběly dokumentační komentáře
+
+Všechny tyto chyby byly opraveny v nových implementacích a byly přidány testy, které ověřují správnou funkčnost. Také byly přidány JavaDoc komentáře ke všem metodám a třídám.
+Pro spuštění testů s assertions byste měli použít přepínač -ea při spuštění JVM, tedy například:
+java -ea VyhodnoceniProspechuTest
+java -ea ZpracovaniTest
+java -ea ZpracovaniMojeTestRetryClaude does not have the ability to run the code it generates yet.Claude can make mistakes. Please double-check responses.
